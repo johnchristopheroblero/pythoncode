@@ -1,0 +1,20 @@
+class Bicycle:
+def __init__(self):
+self.tires = self.add_tires()
+defadd_tires(self):
+returnGenericTires()
+defget_tire_type(self):
+returnself.tires.tire_type()
+
+classMountainBike(Bicycle):
+defadd_tires(self):
+returnMountainTires()
+classGenericTires:
+deftire_type(self):
+return 'generic'
+classMountainTires:
+deftire_type(self):
+return 'mountain'
+mountain_bike = MountainBike()
+print(mountain_bike.get_tire_type())
+
